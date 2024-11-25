@@ -1,0 +1,7 @@
+@import '../../styles/ui/variables.css';
+
+.wrapper {
+    background-color: var(--color-purple-900);
+    color: aqua;
+    box-shadow: var(--shadow-400);
+}
