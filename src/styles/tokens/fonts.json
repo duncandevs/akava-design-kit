@@ -1,0 +1,127 @@
+{
+    "font": {
+        "h1": {
+            "fontFamily": "Inter, sans-serif",
+            "fontWeight": "600",
+            "fontSize": "48px",
+            "lineHeight": "58px"
+        },
+        "h2": {
+            "fontFamily": "Inter, sans-serif",
+            "fontWeight": "600",
+            "fontSize": "40px",
+            "lineHeight": "48px"
+        },
+        "h3": {
+            "fontFamily": "Inter, sans-serif",
+            "fontWeight": "600",
+            "fontSize": "32px",
+            "lineHeight": "38px"
+        },
+        "h4": {
+            "fontFamily": "Inter, sans-serif",
+            "fontWeight": "600",
+            "fontSize": "28px",
+            "lineHeight": "34px"
+        },
+        "h5": {
+            "fontFamily": "Inter, sans-serif",
+            "fontWeight": "600",
+            "fontSize": "24px",
+            "lineHeight": "28px"
+        },
+        "s1": {
+            "fontFamily": "Inter, sans-serif",
+            "fontWeight": "600",
+            "fontSize": "18px",
+            "lineHeight": "28px"
+        },
+        "s2": {
+            "fontFamily": "Inter, sans-serif",
+            "fontWeight": "600",
+            "fontSize": "16px",
+            "lineHeight": "24px"
+        },
+        "b1": {
+            "fontFamily": "Inter, sans-serif",
+            "fontWeight": "400",
+            "fontSize": "16px",
+            "lineHeight": "24px"
+        },
+        "b2": {
+            "fontFamily": "Inter, sans-serif",
+            "fontWeight": "500",
+            "fontSize": "16px",
+            "lineHeight": "24px"
+        },
+        "b3": {
+            "fontFamily": "Inter, sans-serif",
+            "fontWeight": "400",
+            "fontSize": "14px",
+            "lineHeight": "20px"
+        },
+        "b4": {
+            "fontFamily": "Inter, sans-serif",
+            "fontWeight": "500",
+            "fontSize": "14px",
+            "lineHeight": "20px"
+        },
+        "c1": {
+            "fontFamily": "Inter, sans-serif",
+            "fontWeight": "400",
+            "fontSize": "12px",
+            "lineHeight": "16px"
+        },
+        "c2": {
+            "fontFamily": "Inter, sans-serif",
+            "fontWeight": "500",
+            "fontSize": "12px",
+            "lineHeight": "16px"
+        },
+        "c3": {
+            "fontFamily": "Inter, sans-serif",
+            "fontWeight": "500",
+            "fontSize": "10px",
+            "lineHeight": "14px"
+        },
+        "label": {
+            "fontFamily": "Inter, sans-serif",
+            "fontWeight": "500",
+            "fontSize": "12px",
+            "lineHeight": "16px",
+            "textTransform": "uppercase"
+        },
+        "button": {
+            "giant": {
+                "fontFamily": "Inter, sans-serif",
+                "fontWeight": "600",
+                "fontSize": "18px",
+                "lineHeight": "24px"
+            },
+            "large": {
+                "fontFamily": "Inter, sans-serif",
+                "fontWeight": "600",
+                "fontSize": "16px",
+                "lineHeight": "20px"
+            },
+            "medium": {
+                "fontFamily": "Inter, sans-serif",
+                "fontWeight": "600",
+                "fontSize": "14px",
+                "lineHeight": "16px"
+            },
+            "small": {
+                "fontFamily": "Inter, sans-serif",
+                "fontWeight": "600",
+                "fontSize": "12px",
+                "lineHeight": "16px"
+            },
+            "tiny": {
+                "fontFamily": "Inter, sans-serif",
+                "fontWeight": "600",
+                "fontSize": "10px",
+                "lineHeight": "12px"
+            }
+        }
+    }
+}
