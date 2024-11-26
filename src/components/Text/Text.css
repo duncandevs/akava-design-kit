@@ -1,0 +1,112 @@
+@import '../../styles/ui/variables.css';
+
+/* Headings */
+.h1 {
+    font-family: var(--font-h1-font-family);
+    font-size: var(--font-h1-font-size);
+    font-weight: var(--font-h1-font-weight);
+    line-height: var(--font-h1-line-height);
+}
+
+.h2 {
+    font-family: var(--font-h2-font-family);
+    font-size: var(--font-h2-font-size);
+    font-weight: var(--font-h2-font-weight);
+    line-height: var(--font-h2-line-height);
+}
+
+.h3 {
+    font-family: var(--font-h3-font-family);
+    font-size: var(--font-h3-font-size);
+    font-weight: var(--font-h3-font-weight);
+    line-height: var(--font-h3-line-height);
+}
+
+.h4 {
+    font-family: var(--font-h4-font-family);
+    font-size: var(--font-h4-font-size);
+    font-weight: var(--font-h4-font-weight);
+    line-height: var(--font-h4-line-height);
+}
+
+.h5 {
+    font-family: var(--font-h5-font-family);
+    font-size: var(--font-h5-font-size);
+    font-weight: var(--font-h5-font-weight);
+    line-height: var(--font-h5-line-height);
+}
+
+/* Subheadings */
+.s1 {
+    font-family: var(--font-s1-font-family);
+    font-size: var(--font-s1-font-size);
+    font-weight: var(--font-s1-font-weight);
+    line-height: var(--font-s1-line-height);
+}
+
+.s2 {
+    font-family: var(--font-s2-font-family);
+    font-size: var(--font-s2-font-size);
+    font-weight: var(--font-s2-font-weight);
+    line-height: var(--font-s2-line-height);
+}
+
+/* Body Text */
+.b1 {
+    font-family: var(--font-b1-font-family);
+    font-size: var(--font-b1-font-size);
+    font-weight: var(--font-b1-font-weight);
+    line-height: var(--font-b1-line-height);
+}
+
+.b2 {
+    font-family: var(--font-b2-font-family);
+    font-size: var(--font-b2-font-size);
+    font-weight: var(--font-b2-font-weight);
+    line-height: var(--font-b2-line-height);
+}
+
+.b3 {
+    font-family: var(--font-b3-font-family);
+    font-size: var(--font-b3-font-size);
+    font-weight: var(--font-b3-font-weight);
+    line-height: var(--font-b3-line-height);
+}
+
+.b4 {
+    font-family: var(--font-b4-font-family);
+    font-size: var(--font-b4-font-size);
+    font-weight: var(--font-b4-font-weight);
+    line-height: var(--font-b4-line-height);
+}
+
+/* Caption Text */
+.c1 {
+    font-family: var(--font-c1-font-family);
+    font-size: var(--font-c1-font-size);
+    font-weight: var(--font-c1-font-weight);
+    line-height: var(--font-c1-line-height);
+}
+
+.c2 {
+    font-family: var(--font-c2-font-family);
+    font-size: var(--font-c2-font-size);
+    font-weight: var(--font-c2-font-weight);
+    line-height: var(--font-c2-line-height);
+}
+
+.c3 {
+    font-family: var(--font-c3-font-family);
+    font-size: var(--font-c3-font-size);
+    font-weight: var(--font-c3-font-weight);
+    line-height: var(--font-c3-line-height);
+}
+
+/* Label */
+.label {
+    font-family: var(--font-label-font-family);
+    font-size: var(--font-label-font-size);
+    font-weight: var(--font-label-font-weight);
+    line-height: var(--font-label-line-height);
+    text-transform: var(--font-label-text-transform);
+}

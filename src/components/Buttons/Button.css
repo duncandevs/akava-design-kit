@@ -4,4 +4,5 @@
     background-color: var(--color-purple-900);
     color: aqua;
     box-shadow: var(--shadow-400);
+    font-size: var(--font-button-giant-font-size);
 }
