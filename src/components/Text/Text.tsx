@@ -23,6 +23,9 @@ const TagMap = {
     label: "label",
 };
 
+/**
+ * Primary UI component for Text display
+ */
 const Text = ({
   children,
   variant,

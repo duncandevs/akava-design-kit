@@ -7,19 +7,16 @@ import {cn} from '../../utils';
  * Primary UI Button component
  * Three Variants: Primary, Outline, Clear
  */
-const Button = ({ label, size, variant, disabled, LeftIcon, RightIcon, ...props }) => {
-  const btnClassNames = cn(variant, size);
-  const labelClassNames = cn(size, disabled && 'disabled');
+const IconButton = ({ label, size, variant, disabled, Icon, ...props }) => {
+  const btnClassNames = cn('icon-button', variant, size);
   const iconClassNames = cn('icon', size, disabled && 'disabled');
 
   return <button className={btnClassNames} {...props} disabled={disabled}>
-      { LeftIcon && <LeftIcon className={iconClassNames} /> }
-      <label className={labelClassNames}>{label}</label>
-      { RightIcon && <RightIcon className={iconClassNames} /> }
+      <Icon classNames={iconClassNames}/>
     </button>;
 };
 
-Button.propTypes = {
+IconButton.propTypes = {
    /**
    * Button display text
    */
@@ -41,18 +38,14 @@ Button.propTypes = {
   */
   disabled: PropTypes.bool,
    /**
-  * LeftIcon renders diplays an icon to the left
+  * Icon renders diplays an icon
   */
-  LeftIcon: PropTypes.element,
-  /**
-  * RightIcon renders diplays an icon to the right
-  */
-  RightIcon: PropTypes.element
+  Icon: PropTypes.element,
 };
 
-Button.defaultProps = {
+IconButton.defaultProps = {
   variant: 'primary',
   size: 'medium'
 };
 
-export default Button;
+export default IconButton;

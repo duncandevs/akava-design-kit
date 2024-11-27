@@ -1,8 +1,190 @@
 @import '../../styles/ui/variables.css';
+/* Register Button Variables */
+:root {
+    --button-giant-width: 171px;
+    --button-giant-height: 56px;
+    --button-giant-radius: 12px;
+    --button-giant-icon-size: 24px;
+    --button-giant-icon-button-size: 56px;
+    --button-giant-icon-button-radius: 12px;
+    --button-giant-padding: 24px;
+    --button-large-width: 156px;
+    --button-large-height: 48px;
+    --button-large-icon-size: 24px;
+    --button-large-icon-button-size: 48px;
+    --button-large-icon-button-radius: 12px;
+    --button-large-padding: 20px;
+    --button-medium-width: 142px;
+    --button-medium-height: 40px;
+    --button-medium-icon-size: 24px;
+    --button-medium-icon-button-size: 40px;
+    --button-medium-icon-button-radius: 12px;
+    --button-medium-padding: 16px;
+    --button-small-width: 127px;
+    --button-small-height: 32px;
+    --button-small-icon-size: 24px;
+    --button-small-icon-button-size:32px;
+    --button-small-icon-button-radius:8px;
+    --button-small-padding: 12px;
+    --button-tiny-width: 97px;
+    --button-tiny-height: 24px;
+    --button-tiny-icon-size: 12px;
+    --button-tiny-icon-button-size: 24px;
+    --button-tiny-icon-button-radius: 8px;
+    --button-tiny-padding: 8px;
+}
 
-.wrapper {
-    background-color: var(--color-purple-900);
-    color: aqua;
-    box-shadow: var(--shadow-400);
+button {
+    border: none; 
+    border-radius: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+button label {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.icon-button {
+    justify-content: center;
+}
+
+/* Button Sizes  */
+button.giant:not(.icon-button) {
+    min-width: var(--button-giant-width);
+    height: var(--button-giant-height);
+    padding: var(--button-giant-padding);
+}
+
+button.large:not(.icon-button) {
+    min-width: var(--button-large-width);
+    height: var(--button-large-height);
+    padding: var(--button-large-padding);
+}
+
+button.medium:not(.icon-button) {
+    min-width: var(--button-medium-width);
+    height: var(--button-medium-height);
+    padding: var(--button-medium-padding);
+}
+
+button.small:not(.icon-button) {
+    min-width: var(--button-small-width);
+    height: var(--button-small-height);
+    padding: var(--button-small-padding);
+}
+
+button.tiny:not(.icon-button) {
+    min-width: var(--button-tiny-width);
+    height: var(--button-tiny-height);
+    padding: var(--button-tiny-padding);
+}
+
+/* ICON BUTTON SIZES */
+button.icon-button.giant {
+    width: var(--button-giant-icon-button-size);
+    height: var(--button-giant-icon-button-size);
+    border-radius: var(--button-giant-icon-button-radius);
+}
+button.icon-button.large {
+    width: var(--button-large-icon-button-size);
+    height: var(--button-large-icon-button-size);
+    border-radius: var(--button-large-icon-button-radius);
+}
+button.icon-button.medium {
+    width: var(--button-medium-icon-button-size);
+    height: var(--button-medium-icon-button-size);
+    border-radius: var(--button-medium-icon-button-radius);
+}
+button.icon-button.small {
+    width: var(--button-small-icon-button-size);
+    height: var(--button-small-icon-button-size);
+    border-radius: var(--button-small-icon-button-radius);
+}
+button.icon-button.tiny {
+    width: var(--button-tiny-icon-button-size);
+    height: var(--button-tiny-icon-button-size);
+    border-radius: var(--button-tiny-icon-button-radius);
+}
+
+/* Button Variants */
+button.primary {
+    color: white;
+    background-color: var(--color-primary-500);
+}
+button.primary:hover {
+    background-color: var(--color-primary-700);
+}
+button.primary:focus {
+    background-color: var(--color-primary-500);
+    border: 3px solid;
+    border-color: var(--color-primary-200);
+}
+button.primary:active {
+    background-color: var(--color-primary-800);
+}
+button.primary:disabled {
+    background-color: var(--color-grey-200);
+}
+
+/* Label Variants */
+label.disabled {
+    color: var(--color-grey-400);
+}
+label.giant {
+    font-family: var(--font-button-giant-font-family);
+    font-weight: var(--font-button-giant-font-weight);
     font-size: var(--font-button-giant-font-size);
+    line-height: var(--font-button-giant-line-height);
+}
+label.large {
+    font-family: var(--font-button-large-font-family);
+    font-weight: var(--font-button-large-font-weight);
+    font-size: var(--font-button-large-font-size);
+    line-height: var(--font-button-large-line-height);
+}
+label.medium {
+    font-family: var(--font-button-medium-font-family);
+    font-weight: var(--font-button-medium-font-weight);
+    font-size: var(--font-button-medium-font-size);
+    line-height: var(--font-button-medium-line-height);
+}
+label.small {
+    font-family: var(--font-button-small-font-family);
+    font-weight: var(--font-button-small-font-weight);
+    font-size: var(--font-button-small-font-size);
+    line-height: var(--font-button-small-line-height);
+}
+label.tiny {
+    font-family: var(--font-button-tiny-font-family);
+    font-weight: var(--font-button-tiny-font-weight);
+    font-size: var(--font-button-tiny-font-size);
+    line-height: var(--font-button-tiny-line-height);
+}
+
+/* Icon Styling */
+.icon.disabled {
+    stroke: var(--color-grey-400);
+}
+.icon.giant {
+    width: var(--button-giant-icon-size);
+    height: var(--button-giant-icon-size);
+}
+.icon.large {
+    width: var(--button-large-icon-size);
+    height: var(--button-large-icon-size);
+}
+.icon.medium {
+    width: var(--button-medium-icon-size);
+    height: var(--button-medium-icon-size);
+}
+.icon.small {
+    width: var(--button-small-icon-size);
+    height: var(--button-small-icon-size);
+}
+.icon.tiny {
+    width: var(--button-tiny-icon-size);
+    height: var(--button-tiny-icon-size);
 }
