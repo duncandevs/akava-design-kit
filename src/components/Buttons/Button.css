@@ -45,13 +45,14 @@ button {
 button label {
     margin-left: 8px;
     margin-right: 8px;
+    cursor: pointer;
 }
 
 .icon-button {
     justify-content: center;
 }
 
-/* Button Sizes  */
+/* BUTTON SIZES  */
 button.giant:not(.icon-button) {
     min-width: var(--button-giant-width);
     height: var(--button-giant-height);
@@ -109,7 +110,8 @@ button.icon-button.tiny {
     border-radius: var(--button-tiny-icon-button-radius);
 }
 
-/* Button Variants */
+/* BUTTON VARIANTS */
+/* primary */
 button.primary {
     color: white;
     background-color: var(--color-primary-500);
@@ -117,16 +119,51 @@ button.primary {
 button.primary:hover {
     background-color: var(--color-primary-700);
 }
-button.primary:focus {
-    background-color: var(--color-primary-500);
-    border: 3px solid;
-    border-color: var(--color-primary-200);
-}
 button.primary:active {
     background-color: var(--color-primary-800);
 }
 button.primary:disabled {
     background-color: var(--color-grey-200);
+}
+/* outline */
+button.outline {
+    color: var(--color-primary-500);
+    background-color: white;
+    border: 1.5px solid;
+    border-color: var(--color-primary-500);
+}
+button.outline:hover {
+    color: var(--color-primary-500);
+    background-color: var(--color-primary-50);
+    border: 1.5px solid;
+    border-color: var(--color-primary-500);
+}
+button.outline:active {
+    color: var(--color-primary-500);
+    background-color: var(--color-primary-100);
+    border: 1.5px solid;
+    border-color: var(--color-primary-500);
+}
+button.outline:disabled {
+    background-color:white;
+    border-color: var(--color-grey-200);
+}
+/* clear */
+button.clear {
+    color: var(--color-primary-500);
+    background-color: white;
+}
+button.clear:hover {
+    color: var(--color-primary-500);
+    background-color: var(--color-primary-50);
+}
+button.clear:active {
+    color: var(--color-primary-500);
+    background-color: var(--color-primary-100);
+}
+button.clear:disabled {
+    background-color:white;
+    border-color: var(--color-grey-200);
 }
 
 /* Label Variants */
@@ -164,7 +201,7 @@ label.tiny {
     line-height: var(--font-button-tiny-line-height);
 }
 
-/* Icon Styling */
+/* ICON STYLES */
 .icon.disabled {
     stroke: var(--color-grey-400);
 }
