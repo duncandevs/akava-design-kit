@@ -1,0 +1,39 @@
+@import '../../styles/ui/variables.css';
+:root {
+    --input-large-width: 350px;
+    --input-large-height: 48px;
+}
+
+input {
+    border: none; /* Remove default input border */
+    outline: none; /* Remove focus outline */
+    font-size: 16px; /* Adjust font size */
+    flex: 1; /* Take remaining width */
+    color: #333; /* Text color */
+    background: transparent; /* Transparent to match container */
+}
+
+.input-container {
+    width: var(--input-large-width);
+    height: var(--input-large-height);
+    font-size: var(--font-b1-font-size);
+    display: flex;
+    align-items: center;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 8px; /* Adjust padding for spacing */
+    background-color: #fff; /* White background */
+    transition: border-color 0.2s;
+}
+  
+.input-container:focus-within {
+    border-color: #0056b3; /* Darker blue on focus */
+}
+  
+.input-icon {
+    color: #007bff; /* Match the border color */
+    margin-right: 8px; /* Spacing between icon and input text */
+    display: flex;
+    align-items: center;
+}
+  
