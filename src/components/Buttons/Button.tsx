@@ -5,7 +5,7 @@
 import React from 'react';
 import './Button.css';
 import {cn} from '../../utils';
-import { Type as LucideIcon } from 'lucide-react'
+import { Type as LucideIcon } from 'lucide-react';
 
 
 type ButtonVariants = 'primary' | 'outline' | 'clear';
