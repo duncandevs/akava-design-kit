@@ -16,5 +16,10 @@ const Template = (args) => <Input {...args} />;
 export const Primary = Template.bind({});
 Primary.args = {
   type: "text",
-  Icon: StarIcon
+  Icon: StarIcon,
+  size: 'large',
+  variant: "",
+  label: 'First Name',
+  helperText: 'Enter your first name',
+  placeholder: 'First Name'
 };
