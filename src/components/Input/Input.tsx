@@ -29,20 +29,22 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     };
 
     return (
-        <div className={containerClasses}>
-            {label && <label>{label}</label>}
-            <div className={inputContainerClasses}>
-                {Icon && <Icon className={iconClasses} />}
-                <input
-                    type={type}
-                    className={inputClasses}
-                    ref={ref}
-                    placeholder={placeholder || "Enter text here"}
-                    onChange={_handleOnChange}
-                    {...inputProps}
-                />
+        <div id="core-input-component">
+            <div className={containerClasses}>
+                {label && <label>{label}</label>}
+                <div className={inputContainerClasses}>
+                    {Icon && <Icon className={iconClasses} />}
+                    <input
+                        type={type}
+                        className={inputClasses}
+                        ref={ref}
+                        placeholder={placeholder || "Enter text here"}
+                        onChange={_handleOnChange}
+                        {...inputProps}
+                    />
+                </div>
+                {helperText && <span className={helperClasses}>{helperText}</span>}
             </div>
-            {helperText && <span className={helperClasses}>{helperText}</span>}
         </div>
     );
   }

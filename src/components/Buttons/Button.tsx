@@ -24,14 +24,16 @@ const Button = React.forwardRef<HTMLInputElement, ButtonProps>(
     const labelClassNames = cn(size, disabled && 'disabled');
     const iconClassNames = cn('icon', size, disabled && 'disabled');
 
-    return <button className={btnClassNames} {...props} disabled={disabled}>
-        { LeftIcon && <LeftIcon className={iconClassNames} /> }
-        <label className={labelClassNames}>{label}</label>
-        { RightIcon && <RightIcon className={iconClassNames} /> }
-      </button>;
+    return <div id='core-button-component'>
+        <button className={btnClassNames} {...props} disabled={disabled}>
+          { LeftIcon && <LeftIcon className={iconClassNames} /> }
+          <label className={labelClassNames}>{label}</label>
+          { RightIcon && <RightIcon className={iconClassNames} /> }
+        </button>
+      </div>;
   }
 );
 
-Button.displayName = "Button"
+Button.displayName = "Button";
 
 export default Button;
