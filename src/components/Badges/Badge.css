@@ -20,29 +20,136 @@
         margin: auto;
     }
 
-    .badge .icon, .close-icon {
+    .badge .icon {
         stroke: white;
         cursor: pointer;
     }
 
     .close-icon {
+        stroke: white;
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
         margin-left: auto;
+    }
+
+    .badge:hover {
+        width: 37px;
+        height: 37px;
+        background-color: var(--color-primary-50);
+        border: 1.5px solid var(--color-primary-500);
+    }
+
+    .badge:hover .label {
+        color: var(--color-primary-500);
+    }
+
+    .badge:hover .icon {
+        stroke: var(--color-primary-500);
+    }
+
+    .badge:hover .close-icon {
+        stroke: var(--color-primary-500);
+    }
+
+    /* BADGE SIZES */
+    .badge.small {
+        width: fit-content;
+        min-width: 125px;
+        height: 32px;
+        border-radius: 8px;
+    }
+
+    .badge.small .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .badge.small .icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .badge.small .label {
+        font-size: var(--font-button-small-font-size);
+    }
+
+    .badge.small .close-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .badge.tiny {
+        width: fit-content;
+        min-width: 95px;
+        height: 24px;
+        border-radius: 8px;
+    }
+
+    .badge.tiny .icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .badge.tiny .close-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .badge.tiny .label {
+        font-size: var(--font-button-tiny-font-size);
     }
 
     /* BADGE VARIANTS */
     .badge.success {
         background-color: var(--color-green-500);
     }
+
+    .badge.success:hover {
+        background-color: var(--color-green-50);
+        border: 1.5px solid var(--color-green-500);
+    }
+
+    .badge.success:hover .icon {
+        stroke: var(--color-green-500);
+    }
     
     .badge.info {
         background-color: var(--color-blue-500);
+    }
+
+    .badge.info:hover {
+        background-color: var(--color-blue-50);
+        border: 1.5px solid var(--color-blue-500);
+    }
+
+    .badge.info:hover .icon {
+        stroke: var(--color-blue-500);
     }
 
     .badge.warning {
         background-color: var(--color-yellow-500);
     }
 
+    .badge.warning:hover {
+        background-color: var(--color-yellow-50);
+        border: 1.5px solid var(--color-yellow-500);
+    }
+
+    .badge.warning:hover .icon {
+        stroke: var(--color-yellow-500);
+    }
+
     .badge.error {
         background-color: var(--color-red-500);
+    }
+
+    .badge.error:hover {
+        background-color: var(--color-red-50);
+        border: 1.5px solid var(--color-red-500);
+    }
+
+    .badge.error:hover .icon {
+        stroke: var(--color-red-500);
     }
 }

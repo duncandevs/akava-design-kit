@@ -18,5 +18,6 @@ Primary.args = {
   Icon: StarIcon,
   hideCloseIcon: false,
   isShown: true,
-  onClose: () => alert('handle close badge')
+  onClose: () => alert('handle close badge'),
+  size: 'small'
 };

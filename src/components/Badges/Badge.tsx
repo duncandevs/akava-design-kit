@@ -5,6 +5,7 @@ import { Type as LucideIcon, XIcon } from 'lucide-react';
 
 
 type BadgeVariants = 'default' | 'success' | 'info' | 'warning' | 'error';
+type BadgeSizes = 'medium' | 'small' | 'tiny';
 interface BadgeProps {
     variant: BadgeVariants;
     label: string;
@@ -12,13 +13,14 @@ interface BadgeProps {
     Icon?: typeof LucideIcon;
     hideCloseIcon?: boolean;
     onClose?: () => void;
+    size: BadgeSizes;
 };
 
 const Badge = React.forwardRef<HTMLInputElement, BadgeProps>(
-    ({ label, variant, Icon, hideCloseIcon, onClose }) => {
-      const containerClasses = cn("badge", variant)
+    ({ label, variant, size, Icon, hideCloseIcon, onClose }) => {
+      const containerClasses = cn("badge", variant, size)
       const iconClasses = cn("icon", variant);
-      const closeIconClasses = cn("close-icon", variant)
+      const closeIconClasses = cn("close-icon", variant, size)
 
       return <div id="core-badge">
             <div className={containerClasses}>
