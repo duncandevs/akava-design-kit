@@ -7,7 +7,6 @@
         width: fit-content;
         min-width: 132px;
         height: 40px;
-        /* justify-content: space-around; */
         background-color: var(--color-primary-500);
         border-radius: 12px;
         padding-left: 12px;
@@ -28,5 +27,22 @@
 
     .close-icon {
         margin-left: auto;
+    }
+
+    /* BADGE VARIANTS */
+    .badge.success {
+        background-color: var(--color-green-500);
+    }
+    
+    .badge.info {
+        background-color: var(--color-blue-500);
+    }
+
+    .badge.warning {
+        background-color: var(--color-yellow-500);
+    }
+
+    .badge.error {
+        background-color: var(--color-red-500);
     }
 }
