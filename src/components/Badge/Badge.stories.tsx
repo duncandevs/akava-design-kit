@@ -1,7 +1,7 @@
 // src/stories/Button.stories.tsx
 import React from 'react';
 import Badge from './Badge';
-import { InfoIcon } from 'lucide-react'
+import { StarIcon } from 'lucide-react'
 
 export default {
   title: 'Components/Badge',
@@ -13,7 +13,10 @@ const Template = (args) => <Badge {...args} />;
 
 export const Primary = Template.bind({});
 Primary.args = {
-  label: 'badge',
+  label: 'Badge',
   variant: 'default',
-  Icon: InfoIcon,
+  Icon: StarIcon,
+  hideCloseIcon: false,
+  isShown: true,
+  onClose: () => alert('handle close badge')
 };

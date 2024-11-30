@@ -24,7 +24,7 @@ const Button = React.forwardRef<HTMLInputElement, ButtonProps>(
     const labelClassNames = cn(size, disabled && 'disabled');
     const iconClassNames = cn('icon', size, disabled && 'disabled');
 
-    return <div id='core-button-component'>
+    return <div id='core-button'>
         <button className={btnClassNames} {...props} disabled={disabled}>
           { LeftIcon && <LeftIcon className={iconClassNames} /> }
           <label className={labelClassNames}>{label}</label>

@@ -6,7 +6,7 @@
     --text-grey: #9EA2AE;
 }
 
-:where(#core-input-component){
+:where(#core-input){
     input {
         border: none; 
         outline: none;

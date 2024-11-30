@@ -29,7 +29,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
     };
 
     return (
-        <div id="core-input-component">
+        <div id="core-input">
             <div className={containerClasses}>
                 {label && <label>{label}</label>}
                 <div className={inputContainerClasses}>

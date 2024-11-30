@@ -1,6 +1,6 @@
 @import '../../styles/ui/variables.css';
 
-:where(#core-text-component) {
+:where(#core-text) {
     /* Headings */
     .h1 {
         font-family: var(--font-h1-font-family);

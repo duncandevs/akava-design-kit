@@ -33,7 +33,7 @@
     --button-tiny-icon-button-radius: 8px;
     --button-tiny-padding: 8px;
 }
-:where(#core-button-component){
+:where(#core-button){
     button {
         border: none; 
         border-radius: 16px;
