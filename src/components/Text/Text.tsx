@@ -33,7 +33,7 @@ const Text = ({
 }: TextProps): JSX.Element => {
     const classNames = cn(variant);
     const tag = TagMap?.[variant] || 'p'
-    return createElement( tag, { ...restProps, classNames, id: 'core-text' }, children)
+    return createElement( tag, { ...restProps, class: classNames, id: 'core-text' }, children)
 }
 
 Text.displayName = "Text"

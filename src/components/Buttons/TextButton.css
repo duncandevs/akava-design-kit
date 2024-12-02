@@ -1,0 +1,40 @@
+@import '../../styles/ui/variables.css';
+
+#core-text-button {
+    cursor: pointer;
+}
+
+#core-text-button.giant {
+    font-family: var(--font-button-giant-font-family);
+    font-weight: var(--font-button-giant-font-weight);
+    font-size: var(--font-button-giant-font-size);
+    line-height: var(--font-button-giant-line-height);
+}
+
+#core-text-button.large {
+    font-family: var(--font-button-large-font-family);
+    font-weight: var(--font-button-large-font-weight);
+    font-size: var(--font-button-large-font-size);
+    line-height: var(--font-button-large-line-height);
+}
+
+#core-text-button.medium {
+    font-family: var(--font-button-medium-font-family);
+    font-weight: var(--font-button-medium-font-weight);
+    font-size: var(--font-button-medium-font-size);
+    line-height: var(--font-button-medium-line-height);
+}
+
+#core-text-button.small {
+    font-family: var(--font-button-small-font-family);
+    font-weight: var(--font-button-small-font-weight);
+    font-size: var(--font-button-small-font-size);
+    line-height: var(--font-button-small-line-height);
+}
+
+#core-text-button.tiny {
+    font-family: var(--font-button-tiny-font-family);
+    font-weight: var(--font-button-tiny-font-weight);
+    font-size: var(--font-button-tiny-font-size);
+    line-height: var(--font-button-tiny-line-height);
+}

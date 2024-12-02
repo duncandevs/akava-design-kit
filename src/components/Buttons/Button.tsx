@@ -1,5 +1,5 @@
 /**
- * Primary UI Button component
+ * Primary Text Button component
  * Three Variants: Primary, Outline, Clear
  */
 import React from 'react';
