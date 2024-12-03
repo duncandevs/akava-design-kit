@@ -1,7 +1,7 @@
 // src/stories/Text.stories.tsx
 import React from 'react';
 import { Meta } from '@storybook/react';
-import Text from './Text';
+import Text from '.';
 
 export default {
   title: 'Components/Text',

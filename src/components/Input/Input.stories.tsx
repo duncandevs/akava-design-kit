@@ -1,6 +1,6 @@
 // src/stories/Input.stories.tsx
 import React from 'react';
-import Input from './Input';
+import Input from '.';
 import { StarIcon } from 'lucide-react';
 
 export default {

@@ -1,19 +1,18 @@
 {
   "name": "akava-design-kit",
   "version": "1.0.0",
-  "description": "Starter template to get up and running quickly with React and Storybook",
-  "author": "Chromatic <https://chromatic.com/>",
+  "description": "UI Design Kit based on Alena Zhukava's Design System",
+  "author": "@duncandevs",
+  "main": "src/components/index.ts",
   "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/chromaui/intro-storybook-react-template"
   },
-  "bugs": {
-    "url": "https://github.com/chromaui/intro-storybook-react-template/issues"
-  },
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@radix-ui/react-checkbox": "^1.1.2",
     "clsx": "^2.1.1",
     "lucide-react": "^0.461.0",
     "prettier": "^3.3.3",

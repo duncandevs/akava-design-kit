@@ -8,8 +8,8 @@ import {cn} from '../../utils';
 import { Type as LucideIcon } from 'lucide-react';
 
 
-type ButtonVariants = 'primary' | 'outline' | 'clear';
-interface ButtonProps extends React.ComponentProps<"button"> {
+export type ButtonVariants = 'primary' | 'outline' | 'clear';
+export interface ButtonProps extends React.ComponentProps<"button"> {
   label: string;
   size: string;
   variant: ButtonVariants;

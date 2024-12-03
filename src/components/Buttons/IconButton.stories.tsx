@@ -1,7 +1,7 @@
 // src/stories/Button.stories.tsx
 import React from 'react';
 import IconButton from './IconButton';
-import { ArrowUp } from 'lucide-react';
+import { ArrowDown } from 'lucide-react';
 
 export default {
   title: 'Components/IconButton', // This is the category and name of the story in the Storybook UI
@@ -18,6 +18,6 @@ Primary.args = {
   label: 'Click Me', // Default label text for the button,
   variant: 'primary',
   size: 'giant',
-  Icon: ArrowUp,
+  Icon: ArrowDown,
   disabled: false
 };

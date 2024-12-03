@@ -6,7 +6,7 @@ import { Type as LucideIcon, XIcon } from 'lucide-react';
 
 type BadgeVariants = 'default' | 'success' | 'info' | 'warning' | 'error';
 type BadgeSizes = 'medium' | 'small' | 'tiny';
-interface BadgeProps {
+export interface BadgeProps {
     variant: BadgeVariants;
     label: string;
     isShown: boolean;

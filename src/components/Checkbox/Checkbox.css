@@ -1,0 +1,56 @@
+:where(#core-checkbox) {
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .checkbox {
+        height: 24px;
+        width: 24px;
+        border-radius: 8px;
+        border: solid 1px var(--color-primary-500);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+    }
+
+    .container.alignLeftLabel {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    
+    .checkbox:hover {
+        background-color: var(--color-primary-50);
+    }
+
+    .checkbox:disabled {
+        border: solid 1px var(--color-grey-200);
+    }
+
+    .checkbox:hover:disabled {
+        background-color: transparent;
+        border: solid 1px var(--color-grey-200);
+    }
+
+    .checkbox-label.disabled {
+        color: var(--color-grey-200);
+    }
+
+    .checkbox[data-state="checked"] {
+        background-color: var(--color-primary-500);
+    }
+    
+    .checkbox-indicator {
+        height: 18px;
+        width: 18px;
+    }
+
+    .check {
+        height: 18px;
+        width: 18px;
+        stroke-width: 1.5px;
+        color: white;
+    }
+}

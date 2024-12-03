@@ -1,0 +1,46 @@
+:where(#core-alert) {
+    .alert {
+        display: flex;
+        background-color: var(--color-primary-500);
+        width: 418px;
+        border-radius: 12px;
+        padding: 16px;
+    }
+    .actions {
+        display: flex;
+        gap: 12px;
+        padding-left: 4px;
+    }
+    .content {
+        padding-left: 8px;
+        color: white;
+    }
+    .title {
+        margin: 4px;
+    }
+    .subtitle {
+        margin: 4px;
+    }
+    .icon {
+        margin-top: 4px;
+        stroke: white;
+    }
+    .text-secondary {
+        color: white;
+        opacity: 0.6;
+    }
+
+    /* VARIANTS */
+    .alert.success {
+        background-color: var(--color-green-500);
+    }
+    .alert.info {
+        background-color: var(--color-blue-500);
+    }
+    .alert.warning {
+        background-color: var(--color-yellow-500);
+    }
+    .alert.error {
+        background-color: var(--color-red-500);
+    }
+}

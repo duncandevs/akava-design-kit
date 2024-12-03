@@ -6,7 +6,7 @@ import { Type as LucideIcon } from 'lucide-react';
 
 type IconBadgeVariants = 'default' | 'success' | 'info' | 'warning' | 'error';
 type IconBadgeSizes = 'medium' | 'small' | 'tiny'
-interface IconBadgeProps {
+export interface IconBadgeProps {
     variant: IconBadgeVariants;
     Icon?: typeof LucideIcon;
     onClick?: () => void;

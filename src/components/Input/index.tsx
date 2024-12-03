@@ -5,7 +5,7 @@ import { Type as LucideIcon } from 'lucide-react';
 
 type InputSize = 'large' | 'medium';
 type InputVariant = 'success' | 'info' | 'warning' | 'error'; 
-interface InputProps extends Omit<React.ComponentProps<"input">, "size"> {
+export interface InputProps extends Omit<React.ComponentProps<"input">, "size"> {
     size: InputSize;
     inputProps?: React.ComponentProps<"input">;
     variant?: InputVariant;

@@ -10,8 +10,9 @@ type TextVariants =
   | "label";
 
 export interface TextProps {
-  children: React.ReactNode
-  variant: TextVariants
+  children: React.ReactNode;
+  variant: TextVariants;
+  className?: string;
 }
 
 const TagMap = {
@@ -29,9 +30,10 @@ const TagMap = {
 const Text = ({
   children,
   variant,
+  className,
   ...restProps
 }: TextProps): JSX.Element => {
-    const classNames = cn(variant);
+    const classNames = cn(variant, className);
     const tag = TagMap?.[variant] || 'p'
     return createElement( tag, { ...restProps, class: classNames, id: 'core-text' }, children)
 }
