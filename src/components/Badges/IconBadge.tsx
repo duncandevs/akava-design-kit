@@ -7,11 +7,15 @@ import { Type as LucideIcon } from 'lucide-react';
 type IconBadgeVariants = 'default' | 'success' | 'info' | 'warning' | 'error';
 type IconBadgeSizes = 'medium' | 'small' | 'tiny'
 export interface IconBadgeProps {
+    /** Visual style variant of the icon badge */
     variant: IconBadgeVariants;
+    /** Icon to display in the badge */
     Icon?: typeof LucideIcon;
+    /** Callback function when badge is clicked */
     onClick?: () => void;
+    /** Size variant of the badge */
     size?: IconBadgeSizes;
-};
+  }
 
 const IconBadge = React.forwardRef<HTMLInputElement, IconBadgeProps>(
     ({ variant, Icon, onClick, size }) => {

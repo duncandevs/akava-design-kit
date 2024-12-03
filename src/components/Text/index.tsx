@@ -10,8 +10,11 @@ type TextVariants =
   | "label";
 
 export interface TextProps {
+  /** Content to be rendered */
   children: React.ReactNode;
+  /** Typography variant to apply */
   variant: TextVariants;
+  /** Additional CSS classes to apply */
   className?: string;
 }
 

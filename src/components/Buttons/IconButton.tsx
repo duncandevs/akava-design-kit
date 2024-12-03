@@ -9,11 +9,17 @@ import {cn} from '../../utils';
  * Three Variants: Primary, Outline, Clear
  */
 export interface IconButtonProps extends React.ComponentProps<'button'> {
+  /** Accessible label for the button */
   label: string;
+  /** Callback function when button is clicked */
   onClick: () => void;
+  /** Visual style variant of the button */
   variant?: ButtonVariants;
+  /** Size variant of the button */
   size?: string;
+  /** Whether the button is disabled */
   disabled?: boolean;
+  /** Icon component to display */
   Icon: React.ElementType;
 }
 

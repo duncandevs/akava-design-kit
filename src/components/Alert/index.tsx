@@ -8,11 +8,15 @@ import TextButton from '../Buttons/TextButton';
 
 type AlertVariants = 'default' | 'success' | 'info' | 'warning' | 'error';
 export interface AlertProps {
+    /** Visual style variant of the alert */
     variant: AlertVariants;
+    /** Optional icon to display in the alert */
     Icon?: typeof LucideIcon;
+    /** Callback function when confirm button is clicked */
     onConfirm?: () => void;
+    /** Callback function when cancel button is clicked */
     onCancel?: () => void;
-};
+}
 
 const Alert = React.forwardRef<HTMLInputElement, AlertProps>(
     ({ variant, Icon, onConfirm, onCancel }) => {

@@ -10,13 +10,19 @@ import { Type as LucideIcon } from 'lucide-react';
 
 export type ButtonVariants = 'primary' | 'outline' | 'clear';
 export interface ButtonProps extends React.ComponentProps<"button"> {
+  /** Text to display inside the button */
   label: string;
+  /** Size variant of the button */
   size: string;
+  /** Visual style variant of the button */
   variant: ButtonVariants;
+  /** Additional CSS classes to apply */
   className?: string;
+  /** Optional icon to display before the label */
   LeftIcon?: typeof LucideIcon;
+  /** Optional icon to display after the label */
   RightIcon?: typeof LucideIcon;
-};
+}
 
 const Button = React.forwardRef<HTMLInputElement, ButtonProps>(
   ({ label, size, variant, disabled, className, LeftIcon, RightIcon, ...props }) => {

@@ -1,0 +1,76 @@
+@import '../../styles/ui/variables.css';
+:root {
+    --switch-default-container-width: 44px;
+    --switch-default-container-height: 24px;
+    --switch-default-thumb-size: 20px;
+    --switch-default-start-x-position: -6px;
+    --switch-default-end-x-position: 14px;
+}
+
+#core-switch {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#core-switch.label-right {
+    flex-direction: row;
+}
+
+#core-switch.label-left {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+:where(#core-switch){
+    .switch {
+        width: var(--switch-default-container-width);
+        height: var(--switch-default-container-height);
+        background-color: var(--color-grey-200);
+        border-radius: 9999px;
+        position: relative;
+        padding-top: 1px;
+        padding-left: 0px;
+        border: none;
+    }
+
+
+    .switch[data-state="checked"] {
+        background-color: var(--color-primary-500)
+    }
+
+    .switch.disabled {
+        background-color: var(--color-grey-200);
+    }
+
+    .switch.disabled .thumb {
+        transform: translateX(var(--switch-default-start-x-position)); /* Ensure thumb doesn't move */
+    }
+
+    .thumb {
+        display: block;
+        width: var(--switch-default-thumb-size);
+        height: var(--switch-default-thumb-size);
+        margin-left: 8px;
+        margin-right: 8px;
+        background-color: white;
+        border-radius: 9999px;
+        transition: transform 100ms;
+        transform: translateX(var(--switch-default-start-x-position));
+        will-change: transform;
+    }
+
+    .thumb[data-state="checked"] {
+        transform: translateX(var(--switch-default-end-x-position));
+    }
+
+    .switch-label {
+        font-size: 15px;
+        line-height: 1;
+        user-select: none;
+    }
+
+    .switch-label.disabled {
+        color: var(--color-grey-200)
+    }
+}

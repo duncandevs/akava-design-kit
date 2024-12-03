@@ -6,13 +6,21 @@ import { Type as LucideIcon } from 'lucide-react';
 type InputSize = 'large' | 'medium';
 type InputVariant = 'success' | 'info' | 'warning' | 'error'; 
 export interface InputProps extends Omit<React.ComponentProps<"input">, "size"> {
+    /** Size variant of the input */
     size: InputSize;
+    /** Additional input element props */
     inputProps?: React.ComponentProps<"input">;
+    /** Visual style variant of the input */
     variant?: InputVariant;
+    /** Icon to display inside the input */
     Icon?: typeof LucideIcon;
-    label?: string,
+    /** Label text above the input */
+    label?: string;
+    /** Helper text below the input */
     helperText?: string;
+    /** Placeholder text when input is empty */
     placeholder?: string;
+    /** Callback function when input value changes */
     onValueChange: (text: string) => void;
 }
 
