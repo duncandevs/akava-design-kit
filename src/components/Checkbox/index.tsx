@@ -8,7 +8,7 @@ import Text from "../Text";
 
 export interface CheckboxProps extends React.ComponentPropsWithoutRef<typeof CheckboxPrimitive.Root> {
   // Add any additional custom props here if needed
-  alignLeftLabel?: boolean;
+  labelPosition?: 'left' | 'right';
   label?: string;
   disabled?: boolean;
 }
@@ -16,9 +16,9 @@ export interface CheckboxProps extends React.ComponentPropsWithoutRef<typeof Che
 const Checkbox = React.forwardRef<
   React.ElementRef<typeof CheckboxPrimitive.Root>,
   CheckboxProps
->(({ alignLeftLabel, label, className, disabled, ...props }, ref) => (
+>(({ labelPosition, label, className, disabled, ...props }, ref) => (
     <div id="core-checkbox">
-        <div className={cn("container", alignLeftLabel && "alignLeftLabel")}>
+        <div className={cn("container",`label-${labelPosition}`)}>
           <CheckboxPrimitive.Root
               ref={ref}
               className={cn("checkbox", className )}

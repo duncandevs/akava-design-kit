@@ -3,7 +3,7 @@ import React from 'react';
 import TextButton from './TextButton';
 
 export default {
-  title: 'Components/TextButton', // This is the category and name of the story in the Storybook UI
+  title: 'Core/TextButton', // This is the category and name of the story in the Storybook UI
   component: TextButton,
   tags: ['autodocs'],
 };

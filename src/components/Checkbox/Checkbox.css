@@ -16,9 +16,13 @@
         background-color: transparent;
     }
 
-    .container.alignLeftLabel {
+    .container.label-left {
         flex-direction: row-reverse;
         justify-content: flex-end;
+    }
+
+    .container.label-right {
+        flex-direction: row;
     }
     
     .checkbox:hover {

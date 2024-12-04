@@ -17,15 +17,15 @@ export interface SwitchProps extends React.ComponentPropsWithoutRef<typeof Switc
   defaultChecked?: boolean;
   /** Disabled state */
   disabled?: boolean;
-  /** alignLabelLeft */
-  alignLabelLeft?: boolean;
+  /** labelPosition */
+  labelPosition?: 'left' | 'right';
 }
 
 const Switch = React.forwardRef<
     React.ElementRef<typeof SwitchPrimitives.Root>, 
     SwitchProps
-  >(({ className, disabled, alignLabelLeft, ...props }, ref) => (
-  <div id="core-switch" className={cn(alignLabelLeft && "label-left")}>
+  >(({ className, disabled, labelPosition, ...props }, ref) => (
+  <div id="core-switch" className={cn(`label-${labelPosition}`)}>
     <SwitchPrimitives.Root className={cn(
         "switch", 
         className, 

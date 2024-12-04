@@ -12,7 +12,7 @@ interface TextButtonProps {
 };
 
 const TextButton = React.forwardRef<HTMLInputElement, TextButtonProps>(
-    ({ size="medium", onClick, className, children, ...props }) => {
+    ({ size="medium", onClick, className, children, ...props }, ref) => {
       const textClasses = cn(size, className);
       return <p id="core-text-button" className={textClasses} onClick={onClick} {...props}>{children}</p>
     }

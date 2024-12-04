@@ -4,7 +4,7 @@ import Button from './Button';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 export default {
-  title: 'Components/Button', // This is the category and name of the story in the Storybook UI
+  title: 'Core/Button', // This is the category and name of the story in the Storybook UI
   component: Button,
   tags: ['autodocs'],
 };

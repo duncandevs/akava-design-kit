@@ -2,7 +2,7 @@ import React from 'react';
 import { Checkbox } from '.';
 
 export default {
-  title: 'Components/Checkbox',
+  title: 'Core/Checkbox',
   component: Checkbox,
   tags: ['autodocs'],
 };
@@ -14,8 +14,7 @@ const Template = (args) => <Checkbox {...args} />;
 export const Primary = Template.bind({});
 Primary.args = {
     label: "Placeholder",
-    checked: false,
     disabled: false,
-    alignLeftLabel: false,
-    onCheckedChange: (checked) => alert(`Checkbox ${checked ? 'checked' : 'unchecked'}!`),
+    labelPosition: 'right',
+    onCheckedChange: (checked: boolean) => console.log("checked: ", checked),
 };

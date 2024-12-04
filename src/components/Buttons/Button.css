@@ -55,18 +55,21 @@
     /* BUTTON SIZES  */
     button.giant:not(.icon-button) {
         min-width: var(--button-giant-width);
+        max-width: fit-content;
         height: var(--button-giant-height);
         padding: var(--button-giant-padding);
     }
 
     button.large:not(.icon-button) {
         min-width: var(--button-large-width);
+        max-width: fit-content;
         height: var(--button-large-height);
         padding: var(--button-large-padding);
     }
 
     button.medium:not(.icon-button) {
         min-width: var(--button-medium-width);
+        max-width: fit-content;
         height: var(--button-medium-height);
         padding: var(--button-medium-padding);
     }
@@ -79,6 +82,7 @@
 
     button.tiny:not(.icon-button) {
         min-width: var(--button-tiny-width);
+        max-width: fit-content;
         height: var(--button-tiny-height);
         padding: var(--button-tiny-padding);
     }

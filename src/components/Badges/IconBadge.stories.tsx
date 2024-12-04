@@ -4,7 +4,7 @@ import IconBadge from './IconBadge';
 import { StarIcon } from 'lucide-react';
 
 export default {
-  title: 'Components/IconBadge', 
+  title: 'Core/IconBadge', 
   tags: ['autodocs'],
 };
 

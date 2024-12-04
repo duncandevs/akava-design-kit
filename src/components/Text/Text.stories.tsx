@@ -4,7 +4,7 @@ import { Meta } from '@storybook/react';
 import Text from '.';
 
 export default {
-  title: 'Components/Text',
+  title: 'Core/Text',
   component: Text,
   argTypes: {
     variant: {

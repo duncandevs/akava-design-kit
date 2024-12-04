@@ -4,7 +4,7 @@ import Input from '.';
 import { StarIcon } from 'lucide-react';
 
 export default {
-  title: 'Components/Input', // This is the category and name of the story in the Storybook UI
+  title: 'Core/Input', // This is the category and name of the story in the Storybook UI
   component: Input,
   tags: ['autodocs'],
 };

@@ -4,7 +4,7 @@ import IconButton from './IconButton';
 import { ArrowDown } from 'lucide-react';
 
 export default {
-  title: 'Components/IconButton', // This is the category and name of the story in the Storybook UI
+  title: 'Core/IconButton', // This is the category and name of the story in the Storybook UI
   component: IconButton,
   tags: ['autodocs'],
 };
