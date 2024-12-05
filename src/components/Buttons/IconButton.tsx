@@ -22,13 +22,13 @@ export interface IconButtonProps extends Omit<React.ComponentProps<'button'>, 'l
   Icon: LucideIcon;
 }
 
-const IconButton = ({ size, variant="primary", disabled, Icon, ...props }) => {
+const IconButton = ({ size, variant="primary", disabled, Icon, ...props }: IconButtonProps) => {
   const btnClassNames = cn('icon-button', variant, size);
   const iconClassNames = cn('icon', size, disabled && 'disabled');
 
   return <div id="core-button">
         <button className={btnClassNames} {...props} disabled={disabled}>
-          <Icon classNames={iconClassNames}/>
+          <Icon className={iconClassNames}/>
         </button>
     </div>;
 };

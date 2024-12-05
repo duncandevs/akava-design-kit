@@ -10,21 +10,21 @@ export const ContextMenuTrigger = ContextMenu.Trigger;
 
 export const ContextMenuPortal = ContextMenu.Portal;
 
-export const ContextMenuContent = ({...props}) => <ContextMenu.Content className={cn("ContextMenuTrigger", { ...props.className })} {...props} />;
+export const ContextMenuContent = ({...props}) => <ContextMenu.Content className={cn("ContextMenuTrigger", props.className)} {...props} />;
 
-export const ContextMenuItem = ({...props}) => <ContextMenu.Item className={cn("ContextMenuItem", { ...props.className })} {...props} />;
+export const ContextMenuItem = ({...props}) => <ContextMenu.Item className={cn("ContextMenuItem", props.className)} {...props} />;
 
 export const ContextMenuSub = ({...props}) => <ContextMenu.Sub {...props} />;
 
-export const ContextMenuSubTrigger = ({...props}) => <ContextMenu.SubTrigger className={cn("ContextMenuSubTrigger", { ...props.className })} {...props} />;
+export const ContextMenuSubTrigger = ({...props}) => <ContextMenu.SubTrigger className={cn("ContextMenuSubTrigger", props.className)} {...props} />;
 
-export const ContextMenuSubContent = ({...props}) => <ContextMenu.SubContent className={cn("ContextMenuSubContent", { ...props.className })} {...props} />;
+export const ContextMenuSubContent = ({...props}) => <ContextMenu.SubContent className={cn("ContextMenuSubContent", props.className)} {...props} />;
 
-export const ContextMenuSeparator = ({...props}) => <ContextMenu.Separator className={cn("ContextMenuSeparator", { ...props.className })} {...props} />;
+export const ContextMenuSeparator = ({...props}) => <ContextMenu.Separator className={cn("ContextMenuSeparator", props.className)} {...props} />;
 
-export const ContextMenuLabel = ({...props}) => <ContextMenu.Label className={cn("ContextMenuLabel", { ...props.className })} {...props} />;
+export const ContextMenuLabel = ({...props}) => <ContextMenu.Label className={cn("ContextMenuLabel", props.className)} {...props} />;
 
-export const ContextMenuRadioGroup = ({...props}) => <ContextMenu.RadioGroup className={cn("ContextMenuRadioGroup", { ...props.className })} {...props} />;
+export const ContextMenuRadioGroup = ({...props}) => <ContextMenu.RadioGroup className={cn("ContextMenuRadioGroup", props.className)} {...props} />;
 
 export const ContextMenuRadioItem = ({...props}) => <ContextMenu.RadioItem {...props} value={props.value}/>;
 
