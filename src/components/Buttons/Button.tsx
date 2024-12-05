@@ -27,7 +27,7 @@ export interface ButtonProps extends React.ComponentProps<"button"> {
 const Button = React.forwardRef<HTMLInputElement, ButtonProps>(
   ({ size, variant, disabled=false, className, LeftIcon, RightIcon, children, ...props }) => {
     const btnClassNames = cn(variant, size, className);
-    const labelClassNames = cn(size, disabled && 'disabled');
+    const labelClassNames = cn('button-label', size, disabled && 'disabled');
     const iconClassNames = cn('icon', size, disabled && 'disabled');
 
     return <div id='core-button'>

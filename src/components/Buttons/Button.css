@@ -43,9 +43,10 @@
     }
 
     button label {
-        margin-left: 8px;
-        margin-right: 8px;
         cursor: pointer;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
     }
 
     .icon-button {

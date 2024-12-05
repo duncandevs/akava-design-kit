@@ -4,7 +4,7 @@
 */
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
-import { ChevronRight, StarIcon, MoreHorizontal } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import './Breadcrumb.css';
 import { cn } from "../../utils";
 import { LucideIcon } from "lucide-react";

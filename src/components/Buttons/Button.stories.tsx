@@ -10,12 +10,11 @@ export default {
 };
 
 // Template for creating the story
-const Template = (args) => <Button {...args} />;
+const Template = (args) => <Button {...args}>Click Me</Button>;
 
 // The Primary story
 export const Primary = Template.bind({});
 Primary.args = {
-  label: 'Click Me', // Default label text for the button,
   variant: 'primary',
   size: 'giant',
   LeftIcon: ArrowLeft,
