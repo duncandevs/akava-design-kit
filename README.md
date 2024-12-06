@@ -23,7 +23,7 @@ Follow these steps to start using Akava Design Kit in your project.
 
 1. Clone the repository:
 shell
-git clone https://github.com/your-username/akava-design-kit.git
+git clone https://github.com/duncandevs/akava-design-kit
 cd akava-design-kit
 
 2. Install the dependencies:
@@ -49,7 +49,7 @@ yarn storybook
 
 Import components from the Akava Design Kit into your React application:
 jsx
-import { Button, Card } from 'akava-design-kit';
+```import { Button, Card } from 'akava-design-kit';
 function App() {
   return (
     <div>
@@ -57,7 +57,7 @@ function App() {
       <Card title="Welcome to Akava" description="Your UI design kit for rapid development." />
     </div>
   );
-}
+}```
 
 
 ## Contributing
@@ -77,7 +77,7 @@ Distributed under the MIT License.
 
 Duncan Maina - [linkedin](https://www.linkedin.com/in/duncan-maina-499677135/) - duncandevs@gmail.com
 
-Project Link: [https://github.com/your-username/akava-design-kit](https://github.com/duncandevs/akava-design-kit)
+Project Link: [https://github.com/duncandevs/akava-design-kit](https://github.com/duncandevs/akava-design-kit)
 
 ## Acknowledgements
 
