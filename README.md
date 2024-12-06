@@ -71,14 +71,13 @@ Contributions are what make the open-source community such an amazing place to l
 5. Open a Pull Request
 
 ## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License.
 
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_twitter) - email@example.com
+Duncan Maina - [linkedin](https://www.linkedin.com/in/duncan-maina-499677135/) - duncandevs@gmail.com
 
-Project Link: [https://github.com/your-username/akava-design-kit](https://github.com/your-username/akava-design-kit)
+Project Link: [https://github.com/your-username/akava-design-kit](https://github.com/duncandevs/akava-design-kit)
 
 ## Acknowledgements
 
