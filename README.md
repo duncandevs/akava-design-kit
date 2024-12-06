@@ -57,7 +57,7 @@ function App() {
       <Card title="Welcome to Akava" description="Your UI design kit for rapid development." />
     </div>
   );
-}```
+}
 
 
 ## Contributing
