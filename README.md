@@ -9,6 +9,8 @@ Akava Design Kit is a comprehensive UI component library based on Alena Zhukava'
 - **Storybook-Powered Documentation**: Interactive component playgrounds provided by Storybook to visualize and test components in isolation.
 - **Customizable Theming**: Theming support with CSS variables for easy customization.
 - **Modern Tooling**: Utilizes Vite for an optimized build process and fast development iteration.
+- **Design Tokens**: Utilizes design tokens to ensure a cohesive visual style across all components, enabling a scalable and consistent design language.
+- **Radix UI Primitives**: Incorporates Radix UI primitives to provide unstyled, accessible components as a solid foundation for design system components.
 
 ## Getting Started
 
@@ -85,5 +87,6 @@ Project Link: [https://github.com/duncandevs/akava-design-kit](https://github.co
 
 - [Alena Zhukava](https://www.figma.com/community/file/1267195373409722424)
 - [Radix UI](https://www.radix-ui.com/)
+- [ShadCN](https://ui.shadcn.com/)
 - [Vite](https://vitejs.dev/)
 - [Storybook](https://storybook.js.org/)
