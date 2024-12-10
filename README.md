@@ -52,8 +52,8 @@ yarn storybook
 
 Import components from the Akava Design Kit into your React application:
 jsx
-```
-import { Button, Card } from 'akava-design-kit';
+
+```import { Button, Card } from 'akava-design-kit';
 function App() {
   return (
     <div>

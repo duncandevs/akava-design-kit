@@ -15,6 +15,8 @@ const Template = (args) => <Alert {...args} />;
 // The Primary story
 export const Primary = Template.bind({});
 Primary.args = {
+  title: 'Title',
+  description: 'Get immediate alerts and a notification badge',
   Icon: StarIcon,
   variant: 'primary',
   onConfirm: () => alert('confirmed!'),

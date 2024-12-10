@@ -8,6 +8,10 @@ import TextButton from '../Buttons/TextButton';
 
 type AlertVariants = 'default' | 'success' | 'info' | 'warning' | 'error';
 export interface AlertProps {
+    /** The Visible Title of the Alert */
+    title: string;
+    /** The Alert Description*/
+    description: string;
     /** Visual style variant of the alert */
     variant: AlertVariants;
     /** Optional icon to display in the alert */
@@ -19,7 +23,7 @@ export interface AlertProps {
 }
 
 const Alert = React.forwardRef<HTMLInputElement, AlertProps>(
-    ({ variant, Icon, onConfirm, onCancel }) => {
+    ({ title, description, variant, Icon, onConfirm, onCancel }) => {
       const containerClasses = cn("alert", variant)
       const iconClasses = cn("icon");
 
@@ -27,8 +31,8 @@ const Alert = React.forwardRef<HTMLInputElement, AlertProps>(
             <div className={containerClasses}>
                 {Icon && <Icon className={iconClasses} />}
                 <div className="content">
-                    <Text variant='s2' className='title'>Title</Text>
-                    <Text variant='b3' className='subtitle'>Get immediate alerts and a notification badge.</Text>
+                    <Text variant='s2' className='title'>{title}</Text>
+                    <Text variant='b3' className='subtitle'>{description}</Text>
                     <div className='actions'>
                         <TextButton size='large' onClick={onConfirm}>Confirm</TextButton>
                         <TextButton size='large' className="text-secondary" onClick={onCancel}>Cancel</TextButton>
