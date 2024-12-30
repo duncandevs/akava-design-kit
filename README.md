@@ -3,6 +3,9 @@
 
 Akava Design Kit is a comprehensive UI component library based on [Alena Zhukava's Design System](https://www.figma.com/community/file/1267195373409722424), crafted to provide developers with a set of ready-to-use, modular components to build responsive and accessible web applications quickly and efficiently.
 
+## Demo
+https://akava-design-system.vercel.app/
+
 ## Features
 
 - **Component Diversity**: A wide range of UI components including buttons, cards, dialogs, tabs, tooltips, and more.
