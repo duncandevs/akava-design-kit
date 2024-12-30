@@ -7,7 +7,7 @@
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chromaui/intro-storybook-react-template"
+    "url": "https://github.com/duncandevs/akava-design-kit"
   },
   "license": "MIT",
   "private": true,
